@@ -2,11 +2,15 @@
   <div class="fields">
 
     <h4>{{ fields.creatorName.label }}</h4>
-    <v-container>
-      <input v-for="creator in fields.creatorName.creators" v-model="fields.creatorName.value[creator-1]" placeholder="Creator Name">
-      <button v-if="fields.creatorName.creators > 1" v-on:click="fields.creatorName.creators -= 1">-</button>
+      <input 
+        v-for="creator in fields.creatorName.creators" 
+        v-model="fields.creatorName.value[creator-1]" 
+        placeholder="Creator Name"
+      >
+      <button 
+        v-if="fields.creatorName.creators > 1" 
+        v-on:click="fields.creatorName.creators -= 1">-</button>
       <button v-on:click="fields.creatorName.creators += 1">+</button>
-    </v-container>
 
     <h4>{{ fields.objectType.label }}</h4>
     <select v-model="fields.objectType.value">
