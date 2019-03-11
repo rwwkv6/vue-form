@@ -1,5 +1,5 @@
 # vue-form
-![3deposit](https://github.com/rwwkv6/vue-form/blob/master/src/assets/logo.png)
+![3deposit](https://github.com/rwwkv6/vue-form/blob/master/src/assets/3deposit-vue.png)
 
 ## Project setup
 ```
