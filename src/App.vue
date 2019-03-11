@@ -1,17 +1,37 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Banner msg="Deposit Form"/>
+    <Fields v-bind:fields="fields"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Banner from './components/Banner.vue'
+import Fields from './components/Fields.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Banner,
+    Fields
+  },
+  data() {
+    return {
+      fields: {
+        creatorName: {
+          label: 'Creator Name',
+          type: 'text',
+          value:''
+        },
+        objectType: {
+          label: 'Object Type',
+          type: 'select',
+          choices: ['3d model', 'VR', '360 video'],
+          value: ''
+        }
+      }
+    }
   }
 }
 </script>
