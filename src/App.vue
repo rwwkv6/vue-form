@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <img alt="3deposit logo" src="./assets/logo.png" height="128" width="128">
-    <Banner msg="Deposit Form"/>
-    <Fields v-bind:fields="fields"/>
+    <div class="container-fluid">
+      <img alt="3deposit logo" src="./assets/logo.png" height="128" width="128">
+      <Banner msg="Deposit Form"/>
+      <Fields v-bind:fields="fields"/>
+    </div>
   </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue'
 import Fields from './components/Fields.vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default {
   name: 'app',
@@ -45,7 +48,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
