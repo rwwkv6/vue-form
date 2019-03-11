@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="3deposit logo" src="./assets/logo.png">
+    <img alt="3deposit logo" src="./assets/logo.png" height="128" width="128">
     <Banner msg="Deposit Form"/>
     <Fields v-bind:fields="fields"/>
   </div>
