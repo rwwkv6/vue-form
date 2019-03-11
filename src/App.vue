@@ -21,7 +21,7 @@ export default {
       fields: {
         creatorName: {
           creators: 1,
-          label: 'Creator Name',
+          label: 'Creator Name(s)',
           type: 'text',
           value: ['']
         },
