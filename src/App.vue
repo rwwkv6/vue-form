@@ -20,9 +20,10 @@ export default {
     return {
       fields: {
         creatorName: {
+          creators: 1,
           label: 'Creator Name',
           type: 'text',
-          value:''
+          value: ['']
         },
         objectType: {
           label: 'Object Type',
