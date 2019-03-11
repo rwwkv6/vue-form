@@ -29,6 +29,12 @@ export default {
           type: 'select',
           choices: ['3d model', 'VR', '360 video'],
           value: ''
+        },
+        modelFileType: {
+          label: 'File Type',
+          type: 'select',
+          choices: ['obj', 'glTF'],
+          value: ''
         }
       }
     }

@@ -10,6 +10,11 @@
       <option v-for="choice in fields.objectType.choices">{{ choice }}</option>
     </select>
 
+    <h3 v-if="fields.objectType.value == '3d model'">{{ fields.modelFileType.label }}</h3>
+    <select v-if="fields.objectType.value == '3d model'" v-model ="fields.modelFileType.value">
+      <option disabled value="">Select file type</option>v-container>
+      <option v-for="choice in fields.modelFileType.choices">{{ choice }}</option>    
+    </select>
   </div>
 </template>
 
